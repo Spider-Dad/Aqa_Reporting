@@ -17,7 +17,7 @@ import static com.codeborne.selenide.Selenide.open;
 class DeliveryTest {
 
     @BeforeAll
-    static void setUpAll(){
+    static void setUpAll() {
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
@@ -27,7 +27,7 @@ class DeliveryTest {
     }
 
     @AfterAll
-    static void tearDownAll(){
+    static void tearDownAll() {
         SelenideLogger.removeListener("allure");
     }
 
